@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+body, div, img, h1, h2, h3, h4, h5, h6, p, a, button, header, section, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.obj-width {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.w-btn {
+    background-color: white;
+    outline: none;
+    color: #1f4a40;
+    padding: 5px 30px;
+    border-radius: 20px;
+    box-shadow: none;
+}
+
+.g-btn {
+    background-color: #1f4a40;
+    outline: none;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 20px;
+    box-shadow: none;
+}
+
+.header {
+    background-color: #1f4a40;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-div {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-div img {
+    height: 60px;
+    display: flex;
+    margin-left: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.horizontal-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.horizontal-links a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.horizontal-links button {
+    margin-right: 20px;
+}
+
+.menu, .vertical-links {
+    display: none;
+}
+
+.vertical-links {
+    width: 200px;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 85px;
+    right: 10px;
+    height: auto;
+    z-index: 999;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.vertical-links a {
+    width: 80%;
+    padding: 10px 20px;
+    color: #1f4a40;
+    text-decoration: none;
+}
+
+.vertical-links button {
+    width: 80%;
+    padding: 10px 20px;
+}
+
+.hero-section {
+    margin-top: 80px;
+    background-color:#1f4a40;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h-left {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: 10px;
+}
+
+.h-left h2 {
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+
+.h-left p {
+    color: white;
+}
+
+.search {
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding: 15px 30px;
+    outline: none;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.search button {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+}
+
+.h-right {
+    width: 50%;
+}
+
+.h-right img {
+    width: 100%;
+    height: 600px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.feature-section {
+    margin-top: 2rem;
+}
+
+.feature-section h2, .feature-para {
+    padding: 0px 20px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature-card {
+    width: 45%;
+    padding: 20px;
+}
+
+.feature-card img {
+    height: 80px;
+}
+
+.job-types {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    box-shadow: 0px 0px 10px #1f4a40;
+    margin: 20px 0px;
+}
+
+.job-types li {
+    padding: 10px 20px;
+    list-style: none;
+    font-weight: 600;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.job-types .active {
+    background-color: #1f4a40;
+    color: white;
+}
+
+.job-lists {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    row-gap: 30px;
+}
+
+.job-lists .job-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid;
+    padding: 10px 0;
+}
+
+.job-lists .hide {
+    display: none;
+}
+
+.job-lists .job-card:hover {
+    background-color: #ecf1ee;
+}
+
+.job-lists .job-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.job-section h2, p, .job-types, .job-lists {
+    padding: 0px 10px;
+}
+
+.top-space {
+    margin-top: 30px;
+}
+
+.brand-section h2, p, .brands {
+    padding: 0px 10px;
+}
+
+.brand-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-section .brands {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-section .brands img {
+    width: 100px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.footer-section {
+    background-color: #1f4a40;
+    color: white;
+    margin-top: 50px;
+}
+
+.social-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-section .social-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-section .social-left img {
+    width: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.social-section .social-left img, .social-section .social-left p {
+    padding: 0px 10px;
+}
+
+.social-right {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.social-right img {
+    width: 50px;
+    object-fit: contain;
+}
+
+.footer-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.title-and-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 6px;
+}
+
+.title-and-link h4 {
+    padding: 0px 10px 20px 10px;
+}
+
+@media screen and (width < 700px) {
+    .menu {
+        display: flex;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .h-left, .h-right {
+        width: 90%;
+    }
+
+    .job-lists {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+
+    .job-card {
+        flex-direction: column;
+    }
+
+    .brand-section .brands img {
+        width: 30%;
+    }
+
+    .social-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .footer-links {
+        row-gap: 30px;
+    }
+
+    .title-and-link {
+        width: 48%;
+    }
+
+    .title-and-link h4 {
+        padding: 0px 10px 10px 10px;
+    }
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-div obj-width">
+            <img src="./assets/logo.png" alt="JStack Image">
+            <div class="horizontal-links">
+                <a href="#" class="hide-on-mobile">Home</a>
+                <a href="" class="hide-on-mobile">Browse Jobs</a>
+                <a href="" class="hide-on-mobile">Contact</a>
+                <button class="w-btn hide-on-mobile">Join</button>
+                <button class="menu" onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></button>
+            </div>
+            <div class="vertical-links">
+                <button class="g-btn" onclick="closeSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+                <a href="#">Home</a>
+                <a href="">Browse Jobs</a>
+                <a href="">Contact</a>
+                <button class="g-btn">Join</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero obj-width">
+            <div class="h-left">
+                <h2>Find the perfect freelance services for your business</h2>
+                <p>Work with talented people at most affordable price to get the most out of your time and cost</p>
+                <div class="search">
+                    <input type="text" class="search-input" placeholder="Search your job here">
+                    <button class="g-btn">Search</button>
+                </div>
+            </div>
+
+            <div class="h-right">
+                <img src="./assets/hero.PNG" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Section -->
+     <section class="feature-section obj-width">
+        <h2>Need something done?</h2>
+        <p class="feature-para">Most viewed and all time top selling services</p>
+        <div class="features">
+            <div class="feature-card">
+                <img src="./assets/fe 1.png" alt="">
+                <h3>Post a job</h3>
+                <p>It's free and easy to post a job. Simply fill in title and description.</p>
+            </div>
+            <div class="feature-card">
+                <img src="./assets/fe 2.png" alt="">
+                <h3>Post a job</h3>
+                <p>It's free and easy to post a job. Simply fill in title and description.</p>
+            </div>
+            <div class="feature-card">
+                <img src="./assets/fe 3.png" alt="">
+                <h3>Post a job</h3>
+                <p>It's free and easy to post a job. Simply fill in title and description.</p>
+            </div>
+            <div class="feature-card">
+                <img src="./assets/fe 4.png" alt="">
+                <h3>Post a job</h3>
+                <p>It's free and easy to post a job. Simply fill in title and description.</p>
+            </div>
+        </div>
+     </section>
+
+     <!-- Job section -->
+     <section class="job-section obj-width">
+        <h2>Jobs in demand</h2>   
+        <p>Most viewed and all time top selling services</p>
+        <div class="job-types">
+            <li data-target="all" class="active">Recent Jobs</li>
+            <li data-target="freelancer">Freelancer</li>
+            <li data-target="fullTime">Full Time</li>
+            <li data-target="partTime">Part Time</li>
+        </div>
+
+        <div class="job-lists">
+            <div data-item="fullTime" class="job-card">
+                <img src="./assets/google.png">
+                <h4>Web Developer</h4>
+                <p>$900 - 1200/m</p>
+                <p>Full Time</p>
+            </div>
+            <div data-item="partTime" class="job-card">
+                <img src="./assets/uber.png">
+                <h4>Web Developer</h4>
+                <p>$900 - 1200/m</p>
+                <p>Part Time</p>
+            </div>
+            <div data-item="freelancer" class="job-card">
+                <img src="./assets/yahoo.png">
+                <h4>Web Developer</h4>
+                <p>$900 - 1200/m</p>
+                <p>Freelancer</p>
+            </div>
+            <div data-item="fullTime" class="job-card">
+                <img src="./assets/google.png">
+                <h4>Web Developer</h4>
+                <p>$900 - 1200/m</p>
+                <p>Full Time</p>
+            </div>
+            <div data-item="partTime" class="job-card">
+                <img src="./assets/yahoo.png">
+                <h4>Web Developer</h4>
+                <p>$900 - 1200/m</p>
+                <p>Part Time</p>
+            </div>
+            <div data-item="freelancer" class="job-card">
+                <img src="./assets/uber.png">
+                <h4>Web Developer</h4>
+                <p>$900 - 1200/m</p>
+                <p>Freelancer</p>
+            </div>
+        </div>
+     </section>
+
+     <!-- Brand Section -->
+      <section class="brand-section obj-width top-space">
+        <h2>Trusted by the world's best</h3>
+        <p>Most viewed and all time top selling service</p>
+
+        <div class="brands">
+            <img src="./assets/t1.png" alt="">
+            <img src="./assets/t2.png" alt="">
+            <img src="./assets/t3.png" alt="">
+            <img src="./assets/t4.png" alt="">
+            <img src="./assets/t5.png" alt="">
+            <img src="./assets/t6.png" alt="">
+        </div>
+      </section>
+
+      <!-- Team / Freelancer Section -->
+
+      <!-- Footer Section -->
+       <section class="footer-section">
+        <div class="social-section obj-width">
+            <div class="social-left">
+                <img src="./assets/logo.png" alt="">
+                <p>Search your desired jobs</p>
+            </div>
+            <div class="social-right">
+                <img src="./assets/facebook.png" alt="">
+                <img src="./assets/instagram.png" alt="">
+                <img src="./assets/linkedin.png" alt="">
+            </div>
+        </div>
+        <div class="footer-links obj-width">
+            <div class="title-and-link">
+                <h4>Project</h4>
+                <p>Changelog</p>
+                <p>Status</p>
+                <p>License</p>
+                <p>All Versions</p>
+            </div>
+            <div class="title-and-link">
+                <h4>Community</h4>
+                <p>Changelog</p>
+                <p>Status</p>
+                <p>License</p>
+                <p>All Versions</p>
+            </div>
+            <div class="title-and-link">
+                <h4>Help</h4>
+                <p>Changelog</p>
+                <p>Status</p>
+                <p>License</p>
+                <p>All Versions</p>
+            </div>
+            <div class="title-and-link">
+                <h4>Others</h4>
+                <p>Changelog</p>
+                <p>Status</p>
+                <p>License</p>
+                <p>All Versions</p>
+            </div>
+        </div>
+       </section>
+
+</body>
+<script src="app.js"></script>
+<script src="job-filter.js"></script>
+</html>
