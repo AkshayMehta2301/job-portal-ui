@@ -325,6 +325,37 @@ body, div, img, h1, h2, h3, h4, h5, h6, p, a, button, header, section, input {
     padding: 0px 10px 20px 10px;
 }
 
+.top-space {
+    margin-top: 100px;
+}
+
+.top-medium-space {
+    margin-top: 50px;
+}
+
+/* Browse Jobs */
+.search-bar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #1f4a40;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.search-bar p{
+    display: flex;
+    padding: 10px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: x-large;
+}
+
 @media screen and (width < 700px) {
     .menu {
         display: flex;
