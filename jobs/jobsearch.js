@@ -24,6 +24,10 @@ const displayItem = (items) => {
             <p>${type}</p>
         `;
 
+        jobCardDiv.addEventListener('click', () => {
+            window.location.href = `job-details.html?id=${index}`;
+        });
+
         jobContainer.appendChild(jobCardDiv);
     });
 };

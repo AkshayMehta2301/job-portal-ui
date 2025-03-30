@@ -356,6 +356,32 @@ body, div, img, h1, h2, h3, h4, h5, h6, p, a, button, header, section, input {
     font-size: x-large;
 }
 
+/* Job details */
+.job-detail-card {
+    display: flex;
+    border: 1px solid #1f4a40;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-detail-card img {
+    width: 120px;
+    margin: 10px;
+}
+
+.company-location {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 10px;
+}
+
+.job-detail-card button {
+    margin: 10px;
+}
+
+
 @media screen and (width < 700px) {
     .menu {
         display: flex;
