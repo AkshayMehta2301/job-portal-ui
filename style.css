@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
-body, div, img, h1, h2, h3, h4, h5, h6, p, a, button, header, section, input {
+body, div, img, h1, h2, h3, h4, h5, textarea, h6, p, a, button, header, section, input {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -381,6 +381,40 @@ body, div, img, h1, h2, h3, h4, h5, h6, p, a, button, header, section, input {
     margin: 10px;
 }
 
+/* Contact Section */
+.contact-form {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-left img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.contact-right {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-right input, .contact-right textarea {
+    width: 100%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 10px;
+    border: 1px solid;
+}
+
 
 @media screen and (width < 700px) {
     .menu {
@@ -431,5 +465,11 @@ body, div, img, h1, h2, h3, h4, h5, h6, p, a, button, header, section, input {
 
     .title-and-link h4 {
         padding: 0px 10px 10px 10px;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 }
